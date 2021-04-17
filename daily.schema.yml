@@ -1,0 +1,43 @@
+version: 1
+schemas:
+- id: daily
+  title: daily
+  parent: root
+  children: 
+    - journal
+- id: journal
+  title: journal
+  desc: ""
+  children:
+    - year
+- id: year
+  title: year
+  pattern: "[0-2][0-9][0-9][0-9]"
+  children: 
+    - month
+- id: month
+  title: month
+  pattern: "[0-1][0-9]"
+  children: 
+    - day
+- id: day
+  title: day
+  pattern: "[0-3][0-9]"
+  template: 
+    id: template.daily
+    type: note
+  children:
+    - meet
+    - note
+    - weeklyreview
+- id: meet
+  namespace: true
+  template:
+    id: template.meeting
+    type: note
+- id: note
+  namespace: true
+- id: weeklyreview
+  template:
+    id: template.weeklyreview
+    type: note

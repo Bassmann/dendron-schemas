@@ -1,0 +1,11 @@
+version: 1
+schemas:
+- id: bigdata
+  desc: bigdata
+  parent: root
+  namespace: true
+  children:
+    - books
+
+- id: books
+  desc: bigdata books

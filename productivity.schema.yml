@@ -1,0 +1,19 @@
+version: 1
+schemas: 
+- id: productivity
+  desc: All topics around productivity
+  parent: root
+  namespace: true
+  children: 
+    - books
+    - gtd
+
+- id: books
+  desc: productivity books
+  namespace: true
+
+- id: gtd
+  desc: All topics around Getting things done
+  namespace: true
+  children:
+    - books

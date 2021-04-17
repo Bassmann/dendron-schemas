@@ -1,0 +1,26 @@
+version: 1
+schemas:
+- id: security
+  desc: security
+  parent: root
+  children:
+    - books
+    - incident_response
+    - SiemSoc
+    - vm
+    - zerotrust
+
+- id: books
+  desc: Security books
+
+- id: incident_response
+  desc: Note on incident response
+
+- id: SiemSoc
+  desc: Notes on SIEM and SOC topics
+
+- id: vm
+  desc: Vulnerability Management
+  
+- id: zerotrust
+  desc: Notes on Zero Trust

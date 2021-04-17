@@ -1,0 +1,40 @@
+version: 1
+schemas:
+- id: cloud
+  desc: all cloud related topics
+  parent: root
+  namespace: true
+  children:
+    - aws
+    - azure
+    - books
+    - cloudnative
+    - serverless
+
+- id: aws
+  desc: all aws relate topics
+  namespace: true
+  children:
+    - books
+
+- id: azure
+  desc: all azure relate topics
+  namespace: true
+  children:
+    - books
+
+- id: cloudnative
+  desc: topics around CloudNative
+  namespace: true
+  children:
+    - books
+
+- id: serverless
+  desc: notes around serverless
+  namespace: true
+  children:
+    - books
+
+- id: books
+  desc: cloud books
+  namespace: true
