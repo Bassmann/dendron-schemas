@@ -7,6 +7,7 @@ created: 1601811390535
 stub: false
 ---
 
+
 ## Loose Papers
 
 Gather all scraps of paper, business cards, receipts, and miscellaneous paper. Put into your in-basket to process.

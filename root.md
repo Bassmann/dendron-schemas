@@ -5,6 +5,7 @@ desc: ''
 updated: 1619523125025
 created: 1619523125025
 ---
+
 # Welcome to Dendron
 
 This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. 
