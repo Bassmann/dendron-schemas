@@ -2,12 +2,13 @@ version: 1
 schemas:
 - id: daily
   title: daily
+  desc: "Daily Journal"
   parent: root
   children: 
     - journal
 - id: journal
   title: journal
-  desc: ""
+  desc: "Journal"
   children:
     - year
 - id: year
@@ -31,6 +32,8 @@ schemas:
     - note
     - weeklyreview
 - id: meet
+  title: meet
+  desc: "Meeting Notes"
   namespace: true
   template:
     id: template.meeting
@@ -38,6 +41,8 @@ schemas:
 - id: note
   namespace: true
 - id: weeklyreview
+  title: weeklyreview
+  desc: "Weekly Review"
   template:
     id: template.weeklyreview
     type: note
