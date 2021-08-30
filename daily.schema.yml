@@ -31,6 +31,7 @@ schemas:
     - meet
     - note
     - weeklyreview
+    - worktime
 - id: meet
   title: meet
   desc: "Meeting Notes"
@@ -45,4 +46,10 @@ schemas:
   desc: "Weekly Review"
   template:
     id: template.weeklyreview
+    type: note
+- id: worktime
+  title: worktime
+  desc: "Worktime"
+  template:
+    id: template.worktime
     type: note
