@@ -1,0 +1,50 @@
+version: 1
+imports: []
+schemas:
+  - id: journal
+    title: journal
+    parent: root
+    children:
+    - year
+  - id: year
+    title: year
+    pattern: "[0-2][0-9][0-9][0-9]"
+    children: 
+      - month
+  - id: month
+    title: month
+    pattern: "[0-1][0-9]"
+    children: 
+      - day
+  - id: day
+    title: day
+    pattern: "[0-3][0-9]"
+    template: 
+      id: template.daily
+      type: note
+    children:
+      - meet
+      - note
+      - weeklyreview
+      - worktime
+  - id: meet
+    title: meet
+    desc: "Meeting Notes"
+    namespace: true
+    template:
+      id: template.meeting
+      type: note
+  - id: note
+    namespace: true
+  - id: weeklyreview
+    title: weeklyreview
+    desc: "Weekly Review"
+    template:
+      id: template.weeklyreview
+      type: note
+  - id: worktime
+    title: worktime
+    desc: "Worktime"
+    template:
+      id: template.worktime
+      type: note
