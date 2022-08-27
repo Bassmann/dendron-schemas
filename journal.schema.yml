@@ -5,21 +5,22 @@ schemas:
     title: journal
     parent: root
     children:
-    - year
+      - year
   - id: year
     title: year
     pattern: "[0-2][0-9][0-9][0-9]"
-    children: 
+    children:
       - month
   - id: month
     title: month
     pattern: "[0-1][0-9]"
-    children: 
+    children:
+      - review
       - day
   - id: day
     title: day
     pattern: "[0-3][0-9]"
-    template: 
+    template:
       id: template.daily
       type: note
     children:
@@ -47,4 +48,10 @@ schemas:
     desc: "Worktime"
     template:
       id: template.worktime
+      type: note
+  - id: review
+    title: review
+    desc: "Monthly Review"
+    template:
+      id: template.monthly-review
       type: note
